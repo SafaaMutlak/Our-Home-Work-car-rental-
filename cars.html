@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar" xml:lang="ar" dir="rtl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السيارات والحجز - مكتب تأجير السيارات</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <a href="home.html" class="navbar-brand">مكتب تأجير السيارات</a>
+            <ul class="navbar-menu">
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="cars.html" class="active">السيارات والحجز</a></li>
+                <li><a href="AboutUs.html">من نحن</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <h2 class="page-title">قائمة السيارات المتاحة</h2>
+
+        <table id="carsTable">
+            <thead>
+                <tr>
+                    <th>الصورة</th>
+                    <th>الرمز</th>
+                    <th>الموديل</th>
+                    <th>سنة الصنع</th>
+                    <th>السعر اليومي</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="car-row">
+                    <td><img src="images/1.jpg" alt="Toyota Corolla" width="80" height="50" /></td>
+                    <td class="code">CR-001</td>
+                    <td class="model">Toyota Corolla</td>
+                    <td>2023</td>
+                    <td class="price">250000 ل.س</td>
+                    <td><button type="button" class="details-btn">إظهار</button></td>
+                    <td><input type="checkbox" class="carCheck" name="carSelection" value="CR-001" /></td>
+                </tr>
+                <tr class="details-row">
+                    <td colspan="7" class="details-cell">
+                        <div class="details-content">
+                            <strong>التفاصيل:</strong> نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 45000 كم | اللون: أبيض
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="car-row">
+                    <td><img src="images/2.jpg" alt="Kia Sportage" width="80" height="50" /></td>
+                    <td class="code">CR-002</td>
+                    <td class="model">Kia Sportage</td>
+                    <td>2022</td>
+                    <td class="price">400000 ل.س</td>
+                    <td><button type="button" class="details-btn">إظهار</button></td>
+                    <td><input type="checkbox" class="carCheck" name="carSelection" value="CR-002" /></td>
+                </tr>
+                <tr class="details-row">
+                    <td colspan="7" class="details-cell">
+                        <div class="details-content">
+                            <strong>التفاصيل:</strong> نوع الوقود: ديزل | ناقل الحركة: عادي | عدد المقاعد: 5 | عداد الكيلومترات: 62000 كم | اللون: رمادي
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="car-row">
+                    <td><img src="images/3.jpg" alt="Hyundai Elantra" width="80" height="50" /></td>
+                    <td class="code">CR-003</td>
+                    <td class="model">Hyundai Elantra</td>
+                    <td>2024</td>
+                    <td class="price">300000 ل.س</td>
+                    <td><button type="button" class="details-btn">إظهار</button></td>
+                    <td><input type="checkbox" class="carCheck" name="carSelection" value="CR-003" /></td>
+                </tr>
+                <tr class="details-row">
+                    <td colspan="7" class="details-cell">
+                        <div class="details-content">
+                            <strong>التفاصيل:</strong> نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 5 | عداد الكيلومترات: 18000 كم | اللون: أسود
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="car-row">
+                    <td><img src="images/4.jpg" alt="Chevrolet Spark" width="80" height="50" /></td>
+                    <td class="code">CR-004</td>
+                    <td class="model">Chevrolet Spark</td>
+                    <td>2021</td>
+                    <td class="price">180000 ل.س</td>
+                    <td><button type="button" class="details-btn">إظهار</button></td>
+                    <td><input type="checkbox" class="carCheck" name="carSelection" value="CR-004" /></td>
+                </tr>
+                <tr class="details-row">
+                    <td colspan="7" class="details-cell">
+                        <div class="details-content">
+                            <strong>التفاصيل:</strong> نوع الوقود: بنزين | ناقل الحركة: عادي | عدد المقاعد: 4 | عداد الكيلومترات: 80000 كم | اللون: أحمر
+                        </div>
+                    </td>
+                </tr>
+
+                <tr class="car-row">
+                    <td><img src="images/5.jpg" alt="Chevrolet Tahoe" width="80" height="50" /></td>
+                    <td class="code">CR-005</td>
+                    <td class="model">Chevrolet Tahoe</td>
+                    <td>2026</td>
+                    <td class="price">1000000 ل.س</td>
+                    <td><button type="button" class="details-btn">إظهار</button></td>
+                    <td><input type="checkbox" class="carCheck" name="carSelection" value="CR-005" /></td>
+                </tr>
+                <tr class="details-row">
+                    <td colspan="7" class="details-cell">
+                        <div class="details-content">
+                            <strong>التفاصيل:</strong> نوع الوقود: بنزين | ناقل الحركة: أوتوماتيك | عدد المقاعد: 7 | عداد الكيلومترات: 5000 كم | اللون: أسود
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="next-btn-container">
+            <button type="button" id="nextBtn" class="btn-submit">متابعة</button>
+        </div>
+    </div>
+
+    <form id="rentalForm" action="#" method="post">
+        <fieldset>
+            <legend>معلومات الحجز</legend>
+
+            <label for="fullName">الاسم الكامل:</label>
+            <input type="text" id="fullName" name="fullName" />
+
+            <label for="nationalId">الرقم الوطني:</label>
+            <input type="text" id="nationalId" name="nationalId" maxlength="11" />
+
+            <label for="startDate">تاريخ بداية التأجير:</label>
+            <input type="date" id="startDate" name="startDate" />
+
+            <label for="endDate">تاريخ نهاية التأجير:</label>
+            <input type="date" id="endDate" name="endDate" />
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="phone">رقم الموبايل:</label>
+            <input type="text" id="phone" name="phone" maxlength="10" />
+
+            <button type="submit" class="btn1-submit">إرسال</button>
+        </fieldset>
+    </form>
+
+    <div class="back-box">
+        <a href="home.html" class="btn-google">← العودة إلى الصفحة الرئيسية</a>
+    </div>
+
+    <script type="text/javascript" src="myFunctions.js"></script>
+
+</body>
+</html>
